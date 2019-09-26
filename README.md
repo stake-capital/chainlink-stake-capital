@@ -26,3 +26,10 @@ ALLOW_ORIGINS=*" > ~/.chainlink/.env
 ## Set your Ethereum Client URL
 echo "ETH_URL=LINK_to_ETHEREUM_CLIENT" >> ~/.chainlink-ropsten/.env
 
+## Run Cargo 
+
+`cd ~/.chainlink && docker run -p 6688:6688 -v ~/.chainlink:/chainlink -it --env-file=.env smartcontract/chainlink local n -p /chainlink/.password -a /chainlink/.api`
+
+Run in deamon mode: 
+
+`cd ~/.chainlink && docker run -p 6688:6688 -d -v ~/.chainlink:/chainlink -it --env-file=.env smartcontract/chainlink local n -p /chainlink/.password -a /chainlink/.api`
