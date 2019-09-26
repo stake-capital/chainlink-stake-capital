@@ -1,6 +1,8 @@
 # chainlink-stake-capital
 All materials related to Chainlink
 
+Chainlink documentation: https://docs.chain.link/docs/running-a-chainlink-node
+
 # Install a Chainlink validator 
 ## Install Docker
 ```
